@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Gamotic SMP - Staff Team</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#38e038",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#0a120a",
+                        "surface-dark": "#162516",
+                        "border-dark": "#2d452d",
+                    },
+                    fontFamily: { "display": ["Space Grotesk", "sans-serif"] },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; scroll-behavior: smooth; }
+        .staff-card-gradient {
+            background: linear-gradient(145deg, rgba(28, 38, 28, 1) 0%, rgba(18, 32, 18, 1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased min-h-screen">
+
+<header class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/80 backdrop-blur-md">
+    <div class="container mx-auto flex h-20 items-center justify-between px-6 lg:px-20">
+        <div class="flex items-center gap-3">
+            <h2 class="text-2xl font-bold tracking-tight text-slate-100">Gamotic<span class="text-primary"> SMP</span></h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+            <a class="text-sm font-medium hover:text-primary transition-colors text-slate-300" href="index.html">Home</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors text-slate-300" href="index.html#about">About</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors text-slate-300" href="ranks.html">Ranks</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors text-slate-300" href="index.html#crates">Crates</a>
+            <a class="text-sm font-bold text-primary transition-colors" href="staff.html">Staff</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <a href="https://discord.gg/VB4smKd342" target="_blank" class="flex items-center gap-2 rounded-lg bg-primary px-6 py-2 text-sm font-bold text-background-dark hover:brightness-110 transition-all">
+                <span class="material-symbols-outlined text-sm font-bold">forum</span>
+                <span>Join Discord</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="max-w-[1200px] mx-auto px-6 lg:px-20 py-16">
+    <div class="mb-16">
+        <h1 class="text-5xl md:text-6xl font-black text-slate-100 mb-4 tracking-tight uppercase">
+            Meet Our <span class="text-primary">Staff</span>
+        </h1>
+        <p class="text-slate-400 text-lg max-w-2xl">
+            The dedicated team behind the Gamotic SMP experience, ensuring a fair and fun environment for all players.
+        </p>
+    </div>
+
+    <div class="space-y-12">
+        <div class="relative group overflow-hidden rounded-xl border border-primary/20 staff-card-gradient p-8 md:p-12 shadow-2xl">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="relative">
+                    <div class="size-40 md:size-56 rounded-full border-4 border-primary/30 p-2 bg-background-dark shadow-[0_0_40px_rgba(56,224,56,0.15)]">
+                        <div class="w-full h-full rounded-full bg-slate-800 bg-center bg-no-repeat bg-cover" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbyoVKbxqSBYklXeKFHYdrm_lQSODmqnVfTvbIUdPiNauvMF783s7Gf6JByxWOrUSBPy71sRC1wxQJjLQRGLiw7d-FuNTgcPxDU8D7VS5i__vikBC15_HoVOpJbWVIvFZJjkWanDmvugpUNRy_OB27AA8C2r3YD8aaet4A-yOE05taRwBwGW2qgi50YAYa6tQ23U6cBJr8oC-SaPfiYXLWCxIj6x9RxmleLXkV0v0oP0X9hupMZQ7nd5XpC3VvqHfWO9wQY1o1WOf0');"></div>
+                    </div>
+                    <div class="absolute -bottom-2 right-4 bg-primary text-background-dark px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest">Founder</div>
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-3xl md:text-5xl font-black mb-4 bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 uppercase">OWNER - GamoticYT</h3>
+                    <p class="text-slate-300 text-lg leading-relaxed max-w-xl">
+                        This server is owned and led by <span class="text-white font-bold">Mr Aditya Singh aka Gamotic</span> — A passionate Minecraft content creator.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-xl border border-blue-500/20 bg-gradient-to-br from-[#0a0a1a] to-[#1a1a2e] p-8 md:p-12 shadow-2xl">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="relative">
+                    <div class="size-40 md:size-56 rounded-full border-4 border-blue-500/30 p-2 bg-[#0a0a1a] shadow-[0_0_40px_rgba(59,130,246,0.15)]">
+                        <div class="w-full h-full rounded-full bg-slate-800 bg-center bg-no-repeat bg-cover" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOfFiQcF7qLYyK0P2ZyPNG6v1T4mG9F2TBY4PTGcjDnGg8aK5lTyUzMryizRBFmW1Cipng7R-nS8v9jsBRRZCR2QtK80Sc2tz_JKqNT53x3c1KL9S2ckbowpt760yWlcDpN56m9qchhE7A1TtWX_f5fHVB3ur00qNuzWgfogjEDuJAm5kPFHY2U_xeHhPNt3886P5e612oSriFoz36G4liZqyPPp1JDSGxD_vdYYVec8dYqCPrezeqayr_h-D4FEKT3RT36A_MI3IP');"></div>
+                    </div>
+                    <div class="absolute -bottom-2 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest">Management</div>
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-3xl md:text-5xl font-black mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 uppercase">Sr.Admin - itz_rudraX9</h3>
+                    <p class="text-slate-300 text-lg leading-relaxed max-w-xl">
+                        The backbone of technical stability. Dedicated Discord and Minecraft Server Manager.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-8 flex items-center gap-4">
+            <h2 class="text-2xl font-bold text-white uppercase tracking-widest">Support Team</h2>
+            <div class="h-[1px] grow bg-border-dark"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="staff-card-gradient border border-border-dark rounded-xl p-8 text-center hover:border-primary/30 transition-all">
+                <div class="size-20 rounded-full bg-slate-800 mx-auto mb-4 border-2 border-primary/20 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-3xl text-primary/40">person</span>
+                </div>
+                <h4 class="text-white font-bold">Moderator</h4>
+                <p class="text-primary/60 text-xs uppercase tracking-widest mt-1">Chat & Gameplay</p>
+            </div>
+            <div class="staff-card-gradient border border-border-dark rounded-xl p-8 text-center hover:border-primary/30 transition-all">
+                <div class="size-20 rounded-full bg-slate-800 mx-auto mb-4 border-2 border-primary/20 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-3xl text-primary/40">person</span>
+                </div>
+                <h4 class="text-white font-bold">Helper</h4>
+                <p class="text-primary/60 text-xs uppercase tracking-widest mt-1">Community Support</p>
+            </div>
+            <div class="staff-card-gradient border border-border-dark rounded-xl p-8 text-center hover:border-primary/30 transition-all">
+                <div class="size-20 rounded-full bg-slate-800 mx-auto mb-4 border-2 border-primary/20 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-3xl text-primary/40">person</span>
+                </div>
+                <h4 class="text-white font-bold">Builder</h4>
+                <p class="text-primary/60 text-xs uppercase tracking-widest mt-1">World Design</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-background-dark border-t border-border-dark py-12 px-6 lg:px-20">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+            <h2 class="text-xl font-bold tracking-tight text-slate-100">Gamotic<span class="text-primary"> SMP</span></h2>
+        </div>
+        <p class="text-slate-500 text-sm">© 2024 Gamotic SMP. Not an official Minecraft product.</p>
+        <div class="flex gap-6">
+            <a href="https://discord.gg/VB4smKd342" target="_blank" class="text-slate-400 hover:text-primary transition-colors">
+                <span class="material-symbols-outlined">forum</span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
